@@ -34,6 +34,7 @@ h4,h3{
     align-items: center;
 }
 .card{
+    min-width: 350px;
     max-width: 600px;
     height: fit-content;
     padding: 2rem;
@@ -46,7 +47,8 @@ h4,h3{
 
 }
 .imgCont{
-    height: auto;
+    min-height: 150px;
+    max-height: auto;
     width: 80%;
     background-color: var(--black-bean);
     display: flex;
@@ -64,8 +66,14 @@ img{
 form{
     display: flex;
 }
+.input{
+    appearance: none;
+    font-family: 'pokemon_classicregular';
+}
 .statsContainer{
     height: fit-content;
+    min-width: 80%;
+    max-width: 95%;
     background-color: var(--vanilla);
     font-family: 'pokemon_classicregular';
     font-size: .7rem;

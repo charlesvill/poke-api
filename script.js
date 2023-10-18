@@ -41,7 +41,10 @@ const initializer = (function () {
             getStatsByType(processType(data));
             name.textContent = search.value;
         })
-        .catch((error) => console.error(error))
+        .catch((error) => {
+            console.error(error);
+            displayErrorCode();
+        })
     }
     const processType = (obj) => {
         const types = [];
@@ -103,6 +106,11 @@ const initializer = (function () {
             stringArr.push(element.name)
         });
         return stringArr.join(", ");
+    }
+    const displayErrorCode = () => {
+        name.textContent = "! Search Not Found !";
+        img.src = './images/ohnopokemon.png';
+        typetxt.textContent = "Try again";
     }
 
 
