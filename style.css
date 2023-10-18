@@ -1,0 +1,88 @@
+:root{
+    --bronze: #D58936;
+    --vanilla: #F2F3AE;
+    --brown: #A44200;
+    --blood-red: #69140E;
+    --black-bean: #3C1518;
+}
+@font-face {
+    font-family: 'pokemon_classicregular';
+    src: url('./font/pokemon_classic-webfont.woff2') format('woff2'),
+         url('./font/pokemon_classic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    background-color: var(--bronze);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Courier New', monospace;
+}
+p,div,h4{
+    margin: 0;
+}
+h4,h3{
+    text-align: center;
+}
+
+.pageContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    max-width: 600px;
+    height: fit-content;
+    padding: 2rem;
+    background-color: var(--blood-red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .3rem;
+    align-items: center;
+
+}
+.imgCont{
+    height: auto;
+    width: 80%;
+    background-color: var(--black-bean);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    width: 10rem;
+    height: auto;
+}
+.types{
+    color: var(--vanilla);
+}
+form{
+    display: flex;
+}
+.statsContainer{
+    height: fit-content;
+    background-color: var(--vanilla);
+    font-family: 'pokemon_classicregular';
+    font-size: .7rem;
+    margin-top: .5rem;
+}
+.damage{
+    padding: .3rem;
+}
+
+.row{
+    display: flex;
+    gap: .2rem;
+    flex-direction: row;
+    margin-top: .2rem;
+}
+div > p{
+    color:var(--black-bean);
+    font-weight: 600;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Poke-API</title>
+</head>
+<body>
+   <div class="pageContainer">
+    <div class="card">
+        <h3 class="name">Pokemon Stats</h3>
+        <div class="imgCont">
+            <img src="./images/pokemonlogo.png" alt="picture of your pokemon!">
+        </div>
+        <p class="types"></p>
+        <form class="searchbar">
+           <input type="text" name="name" id="name">
+           <button type="submit">🔍</button>
+        </form>
+        <div class="statsContainer">
+            <div class="type"></div>
+            <div class="dealing damage">
+                <h4>Dealing Damage</h4>
+                <div class="row">
+                    <p>2X: </p>
+                    <div class="doubleto"></div>
+                </div>
+                <div class="row">
+                    <p>0X: </p>
+                    <div class="noto"></div>
+                </div>
+                <div class="row">
+                    <p>1/2X: </p>
+                    <div class="halfto"></div>
+                </div>
+            </div>
+            <div class="receiving damage">
+                <h4>Receiving Damage</h4>
+                <div class="row">
+                    <p>2X: </p>
+                    <div class="doublefrom"></div>
+                </div>
+                <div class="row">
+                    <p>0X: </p>
+                    <div class="nofrom"></div>
+                </div>
+                <div class="row">
+                    <p>1/2X: </p>
+                    <div class="halffrom"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
